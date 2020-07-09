@@ -1,0 +1,17 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+header li {
+  width: 108px;
+}
+
+a.buttons {
+  background-image: none;
+  padding-left: 2px;
+}
+
+a.demo {
+  font-weight: bold;
+}
