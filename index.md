@@ -1,6 +1,11 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
 layout: home
+title: NanoBooks
 ---
+
+* Clean and simple accounting software for solopreneurs, consultants, freelancers and other micro-businesses.
+* Privacy focused desktop software. Not cloud-based SaaS. Retain control over your data.
+* Open data format. No lock-in. Retain control over your data.
+* Source code that you can extend/hack/customise yourself. Write your own custom scripts.
+* Double entry bookkeeping
+* Multi currency
