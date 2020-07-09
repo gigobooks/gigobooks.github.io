@@ -3,8 +3,20 @@
 
 @import "{{ site.theme }}";
 
+.wrapper {
+  width: 920px;
+}
+
+section {
+  width: 610px;
+}
+
+header {
+  padding-right: 50px;
+}
+
 header li {
-  width: 108px;
+  width: auto;
 }
 
 a.buttons {
