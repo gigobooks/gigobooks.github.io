@@ -1,0 +1,157 @@
+@import './rc-menu/index.css';
+
+/***********************************************************
+* general                                                  *
+************************************************************/
+
+body {
+    background: linear-gradient(to right, whitesmoke, ghostwhite, whitesmoke, ghostwhite);
+    color: #222;
+}
+
+a { text-decoration: none; color: darkblue; }
+a:hover { text-decoration: underline; }
+
+h1, h2 { font-size: 1.5em; color: #222; }
+
+.page { padding: 0.5em 0.5em 2em; }
+
+.breadcrumb { font-size: 0.66667em; }
+
+/***********************************************************
+* rc-menu                                                  *
+************************************************************/
+
+.rc-menu { margin: 0; padding: 0; cursor: default; }
+
+
+/***********************************************************
+* data tables                                              *
+************************************************************/
+
+.data-table { margin-bottom: 1em; border-spacing: 0; }
+
+.data-table th, .data-table td { padding: 0.25em; border: 1px solid #eee; }
+.data-table th {
+    background: cornsilk;
+    text-transform: uppercase;
+    font-size: 0.875em;
+}
+
+.data-table tr:nth-child(1) td { border-top-color: #444; }
+
+.data-table td { background: white; vertical-align: top; }
+
+.data-table .column-id input { width: 3em; }
+.data-table .column-date input { width: 8em; }
+.data-table td.column-id, .data-table td.column-date { text-align: right; }
+.data-table td.column-raw-link { white-space: nowrap; }
+
+.pagination input { width: 2em; }
+
+
+/***********************************************************
+* forms                                                    *
+************************************************************/
+
+form .error { color: red; }
+form textarea { width: 20em; height: 5em; }
+
+.horizontal-table-form { border-spacing: 0; margin-bottom: 1em; width: 100%; }
+.horizontal-table-form th { text-align: left; padding: 0 0.5em 0 0; font-weight: normal; }
+.horizontal-table-form th label { white-space: nowrap; font-weight: bold; }
+.horizontal-table-form td span { padding: 0 0 0 0.5em; }
+.horizontal-table-form td { box-sizing: border-box; width: 100%; }
+
+/* various forms */
+.horizontal-table-form .row-textarea th { vertical-align: top; padding-top: 5px; }
+.horizontal-table-form .row-tax-enable td label { display: block; }
+
+
+/***********************************************************
+* transaction forms                                        *
+************************************************************/
+
+.transaction-form { margin-bottom: 1em; }
+
+.transaction-fields .row-actor label { font-weight: bold; padding-right: 0.25em; }
+.transaction-fields .row-date td input { width: 8em; }
+.transaction-fields .row-description td input { box-sizing: border-box; width: 100%; }
+
+.transaction-elements { width: 100%; border-spacing: 0; }
+
+.transaction-elements th, .transaction-elements td {
+    padding: 0.25em; border: 1px solid #eee; box-sizing: border-box;
+}
+
+.transaction-elements thead th, .transaction-elements thead td {
+    background: cornsilk; text-transform: uppercase; font-size: 0.875em;
+}
+
+.transaction-elements td { background: white; vertical-align: top; }
+.transaction-elements .element-0 td { border-top: 1px solid #444; padding-top: 0.5em; }
+
+.element-family th { background: cornsilk; text-transform: uppercase; font-size: 0.75em; }
+.element-family .child-last td { padding-bottom: 1.25em; }
+
+.transaction-elements .add-tax { white-space: nowrap; }
+.transaction-elements .account select { max-width: 12em; }
+
+.transaction-elements .description, .transaction-elements .child-description { width: 75%; }
+.transaction-elements .description input, .transaction-elements .child-description input { 
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.transaction-elements .currency { text-align: right; }
+
+.transaction-elements .header-space-start { width: 100%; }
+
+.transaction-elements .child-tax-rate { white-space: nowrap; }
+.transaction-elements .gross-amount input, .transaction-elements .amount input,
+.transaction-elements .child-tax-rate input, .transaction-elements .child-amount input,
+.transaction-elements .debit input, .transaction-elements .credit input {
+    text-align: right;
+    width: 5em; 
+}
+
+.transaction-form .more { text-align: right; padding-bottom: 1em; }
+
+.transaction-form .errors, .transaction-form .buttons { text-align: right; }
+
+
+/***********************************************************
+* payments table/form                                       *
+************************************************************/
+
+.transaction-payments { width: 100%; border-spacing: 0; }
+
+.transaction-payments th, .transaction-payments td {
+    padding: 0.25em; border: 1px solid #eee; box-sizing: border-box;
+}
+.transaction-payments thead th {
+    background: cornsilk; text-transform: uppercase; font-size: 0.875em;
+}
+
+.transaction-payments td { background: white; vertical-align: top; }
+.transaction-payments .payment-0 td { border-top: 1px solid #444; padding-top: 0.5em; }
+
+.transaction-payments .description { width: 75%; }
+.transaction-payments .description input { box-sizing: border-box; width: 100%; }
+.transaction-payments .date input { width: 8em; }
+.transaction-payments .amount { white-space: nowrap; }
+.transaction-payments .amount input { text-align: right; width: 5em; }
+
+/* balances */
+.transaction-balances { border-spacing: 0; }
+.transaction-balances th, .transaction-balances td {
+    padding: 0.25em; border: 1px solid #eee; box-sizing: border-box;
+}
+.transaction-balances thead th {
+    background: cornsilk; text-transform: uppercase; font-size: 0.875em;
+}
+.transaction-balances td { background: white; }
+.transaction-balances .row-0 td { border-top: 1px solid #444; padding-top: 0.5em; }
+
+.transaction-balances .balance { text-align: right; }
+
