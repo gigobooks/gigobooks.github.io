@@ -16,7 +16,7 @@ header {
 }
 
 header li {
-  width: auto;
+  width: 120px;
 }
 
 a.buttons {
@@ -26,4 +26,11 @@ a.buttons {
 
 a.demo {
   font-weight: bold;
+}
+
+@media print, screen and (max-width: 960px) and (min-width: 720px) {
+  p.header {
+    width: 360px;
+    height: 100px;
+  }  
 }
