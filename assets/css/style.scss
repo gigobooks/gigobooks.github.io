@@ -3,34 +3,19 @@
 
 @import "{{ site.theme }}";
 
-.wrapper {
-  width: 920px;
-}
+.wrapper { width: 920px; }
+section { width: 610px; }
 
-section {
-  width: 610px;
-}
+header { padding-right: 50px; }
+header li { width: 120px; }
 
-header {
-  padding-right: 50px;
-}
+a.buttons { background-image: none; padding-left: 2px; }
+a.demo { font-weight: bold; }
 
-header li {
-  width: 120px;
-}
-
-a.buttons {
-  background-image: none;
-  padding-left: 2px;
-}
-
-a.demo {
-  font-weight: bold;
-}
+.post-link { font-weight: bold; }
+.post-excerpt { margin-bottom: 36px; }
+.post-link-more { text-align: right; }
 
 @media print, screen and (max-width: 960px) and (min-width: 720px) {
-  p.header {
-    width: 360px;
-    height: 100px;
-  }  
+  p.header { width: 360px; height: 100px; }
 }
