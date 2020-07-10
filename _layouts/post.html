@@ -19,6 +19,11 @@ layout: default
     {{ content }}
   </div>
 
+  {%- if page.comments_url -%}
+    <hr />
+    <a href="{{ page.comments_url }}">Comments</a>
+  {%- endif -%}
+
   {%- if site.disqus.shortname -%}
     {%- include disqus_comments.html -%}
   {%- endif -%}

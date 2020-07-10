@@ -4,6 +4,7 @@ title: Commentary on business model, licensing, monetisation and related topics
 author: bengtan
 categories: blog
 excerpt_separator: <!--more-->
+comments_url: https://github.com/nanobooks/nanobooks-ce/issues/1
 ---
 
 This software is commercially motivated. In other words, the hope is that it will become first: financially self-sustainable, and then second: profitable.
