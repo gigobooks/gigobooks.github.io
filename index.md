@@ -1,6 +1,6 @@
 ---
 layout: home
-title: NanoBooks
+title: GigoBooks
 ---
 
 * Clean and simple accounting software for solopreneurs, consultants, freelancers and other micro-businesses.
@@ -9,4 +9,4 @@ title: NanoBooks
 * Source code that you can extend/hack/customise yourself. Write your own custom scripts.
 * Double entry bookkeeping
 * Multi currency
-* [**Try out the DEMO**](https://nanobooks.github.io/demo)
+* [**Try out the DEMO**](https://gigobooks.github.io/demo)
