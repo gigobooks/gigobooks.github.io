@@ -1,19 +1,15 @@
 ---
-layout: post
 title: Commentary on business model, licensing, monetisation and related topics
-author: bengtan
-categories: blog
-excerpt_separator: <!--more-->
-comments_url: https://github.com/gigobooks/gigobooks.github.io/issues/1
+comments_github: https://github.com/gigobooks/gigobooks.github.io/issues/1
 ---
 
 This software is commercially motivated. In other words, the hope is that it will become first: financially self-sustainable, and then second: profitable.
 
 It started out as a side project during the Coronavirus/COVID-19 pandemic of 2020. I wrote it because it was something I could use. However, it soon grew into something quite substantial and I wondered whether there might be a market for it. In other words, would other people want to use it, but also, be willing to pay money for it? Because if so, then I could continue working on it and turn it into something (hopefully) great. Only one way to find out.
 
-So, currently, this is a side project ... that's trying to be a real commercial project. If it doesn't become real, then that's fine. I'll just write the features I need, and then move on to do other things. However, if I can get revenue and funding, then I can continue to spend time on it, improve it, and see where it takes us.
+<!--break-->
 
-<!--more-->
+So, currently, this is a side project ... that's trying to be a real commercial project. If it doesn't become real, then that's fine. I'll just write the features I need, and then move on to do other things. However, if I can get revenue and funding, then I can continue to spend time on it, improve it, and see where it takes us.
 
 With that historical background, here's the plan:
 

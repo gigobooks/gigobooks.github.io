@@ -29,7 +29,18 @@ github_username:  bengtan
 repository: gigobooks/gigobooks
 
 date_format: "%-d %b %Y"
+permalink: none
 show_excerpts: true
+excerpt_separator: "<!--break-->"
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      author: bengtan
+      categories: blog
 
 # Build settings
 theme: jekyll-theme-dinky

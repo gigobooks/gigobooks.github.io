@@ -19,9 +19,10 @@ layout: default
     {{ content }}
   </div>
 
-  {%- if page.comments_url -%}
+  {%- if page.comments_github or page.comments_hn -%}
     <hr />
-    <a href="{{ page.comments_url }}">Comments</a>
+    {%- if page.comments_github -%}<a href="{{ page.comments_github }}">Github Comments</a><br />{%- endif -%}
+    {%- if page.comments_hn -%}<a href="{{ page.comments_hn }}">Hacker News Comments</a><br />{%- endif -%}
   {%- endif -%}
 
   {%- if site.disqus.shortname -%}
