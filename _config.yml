@@ -33,6 +33,8 @@ permalink: none
 show_excerpts: true
 excerpt_separator: "<!--break-->"
 
+google_analytics: UA-172982213-1
+
 defaults:
   -
     scope:
