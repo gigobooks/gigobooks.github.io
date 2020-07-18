@@ -1,6 +1,7 @@
 ---
 title: Commentary on business model, licensing, monetisation and related topics
-comments_github: https://github.com/gigobooks/gigobooks.github.io/issues/1
+comments:
+    gh: https://github.com/gigobooks/gigobooks.github.io/issues/1
 ---
 
 This software is commercially motivated. In other words, the hope is that it will become first: financially self-sustainable, and then second: profitable.
