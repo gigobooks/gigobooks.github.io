@@ -9,6 +9,8 @@ layout: default
 
   {{ content }}
 
+  {%- include buttondown.html -%}
+  
   {%- if site.posts.size > 0 -%}
     <h2 class="post-list-heading">{{ page.list_title | default: "Blog" }}</h2>
     <ul class="post-list">
