@@ -1,7 +1,8 @@
 ---
 title: Why I started GigoBooks (and how I got the idea for a startup)
-# comments_github: https://github.com/gigobooks/gigobooks.github.io/issues/N
 excerpt: "I've been an independent/freelance software developer/engineer/consultant/whatchamacallit for 10+ years. All thoughout, I recorded my business activities in an accounting software package (an ancient version of Quickbooks). I did a couple of units in accounting in my undergraduate years so I understood the fundamentals of accounting (assets/liabilities/equity/debit/credit etc.) and the value of having proper financial records. It was easy to maintain and made sense to me."
+comments:
+    hn: https://news.ycombinator.com/item?id=24028890
 ---
 
 First, some historical background to provide some context. (Meta: There is a TL;DR at the bottom if you want to skip to it.)
