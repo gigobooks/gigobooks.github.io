@@ -45,7 +45,7 @@ defaults:
       categories: blog
 
 # Build settings
-theme: jekyll-theme-dinky
+# theme: minima
 plugins:
   - jekyll-feed
 
