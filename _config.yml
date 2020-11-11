@@ -44,6 +44,9 @@ defaults:
       author: bengtan
       categories: blog
 
+header_pages:
+  - blog.html
+
 # Build settings
 # theme: minima
 plugins:
