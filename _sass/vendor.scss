@@ -2,8 +2,11 @@
   border-top: none;
   border-bottom: 6px solid cornflowerblue;
   min-height: auto;
-  min-width: 340px;
+  min-width: 350px;
 }
+
+.site-logo { float: left; padding: 10px 5px 0 0; }
+.site-logo img { width: 30px; height: 30px; }
 
 .site-title { letter-spacing: 0; }
 
@@ -20,7 +23,7 @@
     border-color: forestgreen darkgreen darkgreen forestgreen;
     border-radius: 20px;
     width: 80px;
-    padding: 4px 6px;
+    padding: 4px 6px 2px;
     margin: 10px 10px 0;
     font-weight: bold;
     text-align: center;
@@ -40,6 +43,8 @@
   a { color: deepskyblue; }
   a:hover { color: white; }
 }
+
+.footer-logo { width: 60px; height: 60px; }
 
 .footer-col-wrapper { color: whitesmoke; }
 
