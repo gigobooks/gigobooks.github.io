@@ -1,13 +1,11 @@
 <header class="site-header" role="banner">
 
   <div class="wrapper">
-    <div class="site-logo">
-      <img src="/logo-transparent.png" width="30px" />
-    </div>
-
     {%- assign default_paths = site.pages | map: "path" -%}
     {%- assign page_paths = site.header_pages | default: default_paths -%}
-    <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+    <a class="site-title" rel="author" href="{{ "/" | relative_url }}">
+      <img class="primary" src="{{ "logo-transparent.png" | relative_url }}" /><img class="secondary" src="{{ "logo-opaque.png" | relative_url }}" />{{ site.title | escape }}
+    </a>
 
     {%- if page_paths -%}
       <nav class="site-nav">
