@@ -9,10 +9,7 @@
 .site-title {
   letter-spacing: 0;
   &:hover { color: black; }
-
-  & .primary, & .secondary { width: 30px; height: 30px; margin-right: 5px; }
-  &:hover .primary, & .secondary { display: none; }
-  &:hover .secondary { display: inline; }
+  & img { width: 30px; height: 30px; margin-right: 5px; }
 }
 
 .launch-webapp {
