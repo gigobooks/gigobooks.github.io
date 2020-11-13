@@ -21,7 +21,7 @@
 title: Gig'o'Books
 # email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Clean and simple accounting software for solopreneurs, consultants, freelancers and other micro-businesses.
+  Non-cloud accounting app for solopreneurs, consultants, freelancers and gig economy workers.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
