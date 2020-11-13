@@ -3,28 +3,33 @@ layout: default
 ---
 <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
-  <div class="post-header">
+  <header class="post-header">
+    <div class="breadcrumb"><a href="/blog">Blog</a> » </div>
     <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
     <p class="post-meta">
       <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-        {%- assign date_format = site.date_format | default: "%b %-d, %Y" -%}
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
         {{ page.date | date: date_format }}
       </time>
       {%- if page.author -%}
         • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
       {%- endif -%}</p>
-  </div>
+  </header>
 
   <div class="post-content e-content" itemprop="articleBody">
     {{ content }}
   </div>
 
   {%- if page.comments -%}
-    <hr />
-    {%- if page.comments.gh -%}<a href="{{ page.comments.gh }}">Github Comments</a><br />{%- endif -%}
-    {%- if page.comments.hn -%}<a href="{{ page.comments.hn }}">Hacker News Comments</a><br />{%- endif -%}
-    {%- if page.comments.ih -%}<a href="{{ page.comments.ih }}">Indie Hackers Comments</a><br />{%- endif -%}
+    <hr /><br />
+    {%- if page.comments.older -%}<a href="{{ page.comments.older }}">Older comments</a><br />{%- endif -%}
+    {%- if page.comments.gh -%}<a href="{{ page.comments.gh }}">Github comments</a><br />{%- endif -%}
+    {%- if page.comments.hn -%}<a href="{{ page.comments.hn }}">Hacker News comments</a><br />{%- endif -%}
+    {%- if page.comments.ih -%}<a href="{{ page.comments.ih }}">Indie Hackers comments</a><br />{%- endif -%}
     {%- if page.comments.default -%}<a href="{{ page.comments.default }}">Comments</a><br />{%- endif -%}
+    {%- if page.comments.newer -%}<a href="{{ page.comments.newer }}">Newer comments</a><br />{%- endif -%}
+    {%- if page.comments.more -%}<a href="{{ page.comments.more }}">More comments</a><br />{%- endif -%}
+    {%- if page.comments.more2 -%}<a href="{{ page.comments.more2 }}">Yet more comments</a><br />{%- endif -%}
   {%- endif -%}
 
   {%- if site.disqus.shortname -%}

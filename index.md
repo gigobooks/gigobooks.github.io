@@ -1,6 +1,6 @@
 ---
 layout: home
-title: GigoBooks
+title: Gig'o'Books
 ---
 
 * Clean and simple accounting software for solopreneurs, consultants, freelancers and other micro-businesses.
