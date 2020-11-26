@@ -32,7 +32,7 @@ h1.inline { display: inline-block; }
 * error-handling                                           *
 ************************************************************/
 
-.error-pane { margin: 1em 0; padding: 0.5em; background-color: #ffebeb; color: red; border: 1px solid red; }
+.error-pane { margin: 1em 0; padding: 1em; background-color: #ffebeb; color: red; border: 1px solid red; border-left-width: 4px; }
 .error-pane-dismiss { text-align: right; }
 
 .error { color: red; }
@@ -45,11 +45,30 @@ h1.inline { display: inline-block; }
 
 
 /***********************************************************
+* Misc                                                     *
+************************************************************/
+
+.tool-tip-icon { width: 0.875em; height: 0.875em; vertical-align: baseline; }
+.required-asterisk { height: 0.5em; vertical-align: super; }
+
+
+/***********************************************************
+* Onboarding                                               *
+************************************************************/
+
+.onboarding { margin: 1em 0; padding: 0 1em; background-color: azure; color: #3655b4; border: 1px solid #3655b4; border-left-width: 4px; }
+.onboarding a, .onboarding a:hover, .onboarding a:visited { color: #272931; }
+.onboarding-dismiss { text-align: right; margin: 1em 0; }
+
+
+/***********************************************************
 * About                                                    *
 ************************************************************/
 
 .page-about .logo { width: 60px; height: 60px; float: left; }
 .page-about .info { margin-left: 70px; }
+.page-about .info ul { margin-top: 0; }
+.page-about .extra, .page-about .disclaimer { clear: both; }
 .page-about ul { list-style: none; margin-left: 0; padding-left: 0; }
 
 
