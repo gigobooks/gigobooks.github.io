@@ -27,7 +27,7 @@
     text-align: center;
   }
   a, a:visited { color: white; }
-  a:hover { text-decoration: none; }
+  a:hover { text-decoration: none; background: forestgreen; }
   a:hover .primary, a .secondary { display: none; }
   a:hover .secondary { display: inline; font-weight: normal; }
 }
@@ -50,6 +50,7 @@
 .layout-home .page-content { padding: 0; }
 .layout-home .site-header { border-bottom-width: 0; }
 .pane { padding: 30px 0 0; }
+.pane-title { font-size: 32px; text-align: center; }
 
 .pane-splash {
   background: royalblue;
@@ -83,3 +84,27 @@
     .cta p { display: inline-block; width: 7em; }
   }
 }
+
+.pane-dodonts {
+  .caution { font-size: smaller; text-align: center; }
+
+  .dos, .donts {
+    box-sizing: border-box;
+    margin-bottom: 1em;
+
+    .inner {
+      border: 1px solid slategrey;
+      border-radius: 10px;
+      background: floralwhite;
+      padding: 1em;
+    }
+
+    ul { margin-left: 1em; }
+  }
+
+  @media screen and (min-width: 640px) {
+    .dos { width: 60%; float: left; padding-right: 0.5em; }
+    .donts { width: 40%; float: right; padding-left: 0.5em; }
+  }
+}
+
