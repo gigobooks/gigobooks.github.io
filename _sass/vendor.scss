@@ -20,8 +20,7 @@
     border-color: green;
     border-color: forestgreen darkgreen darkgreen forestgreen;
     border-radius: 20px;
-    width: 80px;
-    padding: 4px 6px 2px;
+    padding: 4px 16px 2px;
     margin: 0;
     font-weight: bold;
     text-align: center;
@@ -31,7 +30,7 @@
   a:hover .primary, a .secondary { display: none; }
   a:hover .secondary { display: inline; font-weight: normal; }
 }
-.launch-webapp { float: right; margin: 10px 10px 0; }
+.launch-webapp { float: right; margin: 10px 10px 0; a { width: 80px; padding-left: 6px; padding-right: 6px; } }
 
 .site-footer {
   border-top: none;
@@ -47,17 +46,22 @@
 
 .footer-content { font-size: 15px; color: whitesmoke; }
 
+.center { text-align: center; }
+
 .layout-home .page-content { padding: 0; }
 .layout-home .site-header { border-bottom-width: 0; }
-.pane { padding: 30px 0 0; }
+.pane { padding: 30px 0 35px;
+  .fineprint { font-size: smaller; }
+}
 .pane-title { font-size: 32px; text-align: center; }
 
 .pane-splash {
   background: royalblue;
   color: white;
+  padding-bottom: 0;
 
   .wrapper { position: relative; }
-  .blurb { max-width: 490px; margin-bottom: 1em; }
+  .blurb { max-width: 33em; margin-bottom: 1em; }
 
   .screenshot { max-width: 160px; }
   .image { position: absolute; right: 20px; bottom: 0; width: 190px; }
@@ -73,6 +77,7 @@
   @media screen and (max-width: 680px) {
     .screenshot { max-width: 135px; }
     .image { width: 150px; }
+    .cta { width: 410px; }
   }
 
   @media screen and (max-width: 640px) {
@@ -81,12 +86,12 @@
     .pad { min-height: 195px; padding-right: 120px; }
     .cta { margin: 20px 0 0 20px; width: auto; }
     .green-button { padding: 30px 0 1em; }
-    .cta p { display: inline-block; width: 7em; }
+    .cta p { display: inline-block; width: 13em; }
   }
 }
 
 .pane-dodonts {
-  .caution { font-size: smaller; text-align: center; }
+  .fineprint { text-align: center; }
 
   .dos, .donts {
     box-sizing: border-box;
@@ -95,7 +100,7 @@
     .inner {
       border: 1px solid slategrey;
       border-radius: 10px;
-      background: floralwhite;
+      background: oldlace;
       padding: 1em;
     }
 
@@ -106,5 +111,28 @@
     .dos { width: 60%; float: left; padding-right: 0.5em; }
     .donts { width: 40%; float: right; padding-left: 0.5em; }
   }
+
+  .post-do-dont { clear: both; text-align: center; }
 }
 
+.pane-features {
+  background: skyblue;
+
+  .list { display: flex; flex-wrap: wrap; margin: 0 -0.5em 1em;  }
+
+  .feature {
+    border: 1px solid slategrey;
+    border-radius: 10px;
+    background: floralwhite;
+    padding: 1em;
+    margin: 0.5em;
+  }
+
+  .weight0 { flex: 1 1 40px; }
+  .weight1 { flex: 1 1 100px; }
+  .weight2 { flex: 1 1 180px; }
+  .weight3 { flex: 1 1 300px; }
+  .weight4 { flex: 1 1 360px; }
+
+  .name { font-size: 1em; font-weight: bold; margin-bottom: 0; }
+}
