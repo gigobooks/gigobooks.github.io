@@ -4,7 +4,7 @@
     {%- assign default_paths = site.pages | map: "path" -%}
     {%- assign page_paths = site.header_pages | default: default_paths -%}
     <a class="site-title" rel="author" href="{{ "/" | relative_url }}">
-      <img src="{{ "logo-transparent.png" | relative_url }}" />{{ site.title | escape }}
+      <img src="{{ "logo.png" | relative_url }}" />{{ site.title | escape }}
     </a>
 
     {%- if page_paths -%}
@@ -29,8 +29,8 @@
       </nav>
     {%- endif -%}
 
-    <div class="launch-webapp">
-      <a href="/webapp"><span class="primary">Start App</span><span class="secondary">It's Free!</span></a>
+    <div class="green-button launch-webapp">
+      <a href="/webapp">Start App</a>
     </div>
   </div>
 </header>
