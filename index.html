@@ -184,8 +184,20 @@ title: Gig'o'Books
       <h3 class="name">Double entry accounting</h3>
     </div>
 
+    {% include hs-checkbox.html id="multi-currency-f" %}
     <div class="feature weight1">
       <h3 class="name">Multi currency</h3>
+      {% include hs-toggle.html id="multi-currency-f" %}
+
+      <div class="details hs-target">
+        <p>
+          Gig'o'Books has true multi-currency support. You can enter transactions in any currency.
+        </p><p>
+          However, sales and purchases can only entered in a single currency (out of the currencies which are configured). For example, you can have an invoice that is in USD and another invoice which is in EUR, but you can't have an invoice which contains a USD amount and a EUR amount at the same time.
+        </p><p>
+          Reports can contain multiple currencies (where applicable), or can be configured to convert all amounts to a single currency (where applicable).
+        </p>
+      </div>
     </div>
   </div>
 

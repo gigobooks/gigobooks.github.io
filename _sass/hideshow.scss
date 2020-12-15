@@ -3,21 +3,23 @@
 // invisible checkbox which retains state
 // input.hs-state { display: none; }
 
+.hs-shower, .hs-hider { cursor: pointer; }
+
 input.hs-state:checked ~ * > .hs-shower,
-input.hs-state:checked ~ * > * > .hs-shower,
+input.hs-state:checked + * > * > .hs-shower,
 input.hs-state ~ * > .hs-hider,
-input.hs-state ~ * > * > .hs-hider { display: none; }
+input.hs-state + * > * > .hs-hider { display: none; }
 
 input.hs-state ~ * > .hs-shower,
-input.hs-state ~ * > * > .hs-shower,
+input.hs-state + * > * > .hs-shower,
 input.hs-state:checked ~ * > .hs-hider,
-input.hs-state:checked ~ * > * > .hs-hider { display: block; }
+input.hs-state:checked + * > * > .hs-hider { display: block; }
 
 input.hs-state ~ * > span.hs-shower,
-input.hs-state ~ * > * > span.hs-shower,
+input.hs-state + * > * > span.hs-shower,
 input.hs-state:checked ~ * > span.hs-hider,
-input.hs-state:checked ~ * > * > span.hs-hider { display: inline; }
+input.hs-state:checked + * > * > span.hs-hider { display: inline; }
 
-input.hs-state ~ .hs-target, input.hs-state ~ * > .hs-target { display: none; }
-input.hs-state:checked ~ .hs-target, input.hs-state:checked ~ * > .hs-target { display: block; }
-input.hs-state:checked ~ span.hs-target, input.hs-state:checked ~ * > span.hs-target { display: inline; }
+input.hs-state ~ .hs-target, input.hs-state + * > .hs-target { display: none; }
+input.hs-state:checked ~ .hs-target, input.hs-state:checked + * > .hs-target { display: block; }
+input.hs-state:checked ~ span.hs-target, input.hs-state:checked + * > span.hs-target { display: inline; }
