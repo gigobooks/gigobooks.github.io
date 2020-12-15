@@ -7,7 +7,7 @@ title: Gig'o'Books
   <h1 class="page-heading">{{ page.title }}</h1>
 
   <div class="blurb">
-    Accounting, tax reporting, and invoicing for your gigs and side income. Non-subscription. Privacy focused.
+    Accounting, tax reporting, and invoicing for your gigs and side income. Non-subscription. Privacy focused. Multi-currency.
   </div>
 
   <div class="screenshots">
@@ -168,9 +168,12 @@ title: Gig'o'Books
       <div class="details">Extend or customise functionality yourself. (Ask us how to get started.)</div>
     </div>
 
-    <div class="feature weight4">
+    {% include hs-checkbox.html id="privacy-f" %}
+    <div class="feature weight2">
       <h3 class="name">Privacy focused</h3>
-      <div class="details">We don't want to know anything about you or your accounts. No one else need know either.</div>
+      {% include hs-toggle.html id="privacy-f" %}
+
+      <div class="details hs-target">We don't want to know anything about you or your accounts. No one else need know either.</div>
     </div>
 
     <div class="feature weight2">
@@ -188,6 +191,48 @@ title: Gig'o'Books
 
   <div class="center">
     <div class="green-button"><a href="/webapp">Try Gig'o'Books</a></div>
+  </div>
+</div></div>
+
+<div class="pane pane-faq"><div class="wrapper">
+  <h2 class="pane-title">FAQs</h2>
+
+  <div class="faq">
+    {% include hs-checkbox.html id="data-trust-q" %}
+    {% include hs-toggle.html id="data-trust-q" %}
+    <span class="question">
+      Can I trust you with looking after my data? How do you protect my data?
+    </span>
+
+    <div class="answer hs-target">
+      <p>
+        The beautiful answer to this question is: There's no need to!
+      </p><p>
+        Unlike other cloud-based or SaaS services, your file is not stored with us. Instead, it's stored on your own computer or phone.
+      </p><p>
+        Or if you save your file to a cloud folder by using something like Dropbox or Google Drive, it's saved to your own cloud, not ours. There's nothing for us to protect.
+      </p>
+    </div>
+  </div>
+
+  <div class="faq">
+    {% include hs-checkbox.html id="cloud-storage-q" %}
+    {% include hs-toggle.html id="cloud-storage-q" %}
+    <span class="question">
+      I want to store my file in the cloud. I want to use Gig'o'Books from any device. Can I do this?
+    </span>
+
+    <div class="answer hs-target">
+      <p>
+        Yes, you can!
+      </p><p>
+        Set up a cloud folder using something like Dropbox or Google Drive. Then, when you save your file, save it to the cloud folder.
+      </p><p>
+        Then, you can (use Gig'o'Books and) access the file from any device which has access to the folder.
+      </p><p>
+        (Speculation: In the future, we may consider having Gig'o'Books save directly to a user-provided cloud ie. Amazon S3.)
+      </p>
+    </div>
   </div>
 </div></div>
 

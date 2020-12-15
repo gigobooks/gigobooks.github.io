@@ -1,3 +1,5 @@
+@import "hideshow";
+
 .site-header {
   border-top: none;
   border-bottom: 6px solid cornflowerblue;
@@ -128,13 +130,26 @@
     background: floralwhite;
     padding: 1em;
     margin: 0.5em;
+    flex: 1 1;
   }
 
-  .weight0 { flex: 1 1 40px; }
-  .weight1 { flex: 1 1 100px; }
-  .weight2 { flex: 1 1 180px; }
-  .weight3 { flex: 1 1 300px; }
-  .weight4 { flex: 1 1 360px; }
+  .weight0 { flex-basis: 40px; }
+  .weight1 { flex-basis: 100px; }
+  .weight2 { flex-basis: 180px; }
+  .weight3 { flex-basis: 300px; }
+  .weight4 { flex-basis: 360px; }
 
-  .name { font-size: 1em; font-weight: bold; margin-bottom: 0; }
+  .name { font-size: 1em; font-weight: bold; margin-bottom: 0; display: inline-block; }
+
+  .hs-shower, .hs-hider { vertical-align: top; color: $brand-color; }
+  input.hs-state:checked + .feature { flex-basis: auto; }
+}
+
+.pane-faq {
+  background: navajowhite;
+
+  .faq { padding-bottom: 1em; }
+  .hs-shower, .hs-hider { position: absolute; color: $brand-color; }
+  .question { display: inline-block; font-weight: bold; padding-left: 24px; }
+  .answer { padding-left: 24px; }
 }
