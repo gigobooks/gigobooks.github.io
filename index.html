@@ -7,7 +7,11 @@ title: Gig'o'Books
   <h1 class="page-heading">{{ page.title }}</h1>
 
   <div class="blurb">
-    Accounting, tax reporting, and invoicing for your gigs and side income. Non-subscription. Privacy focused. Multi-currency.
+    Accounting, tax reporting, and invoicing for your gigs and side income.
+    <br /><br />
+    Non-subscription. Privacy focused. Multi-currency.
+    <br /><br />
+    Quickly and easily so you can do more important stuff.
   </div>
 
   <div class="screenshots">
@@ -130,72 +134,230 @@ title: Gig'o'Books
   <h2 class="pane-title">Features</h2>
 
   <div class="list">
-    <div class="feature weight1">
-      <h3 class="name">Simple. Fast. Uncluttered.</h3>
-    </div>
-
-    <div class="feature weight2">
-      <h3 class="name">Tax compliant invoices</h3>
-      <div class="details">Automatic and stress free</div>
-    </div>
-
-    <div class="feature weight0">
-      <h3 class="name">FREE!</h3>
-    </div>
-
-    <div class="feature weight2">
-      <h3 class="name">Awesome support</h3>
-      <div class="details">Talk directly to the developers</div>
-    </div>
-
-    <div class="feature weight3">
-      <h3 class="name">Non-cloud/non-SaaS</h3>
-      <div class="details">Look after your data yourself. Don't be subject to vendor lock-in.</div>
-    </div>
-
-    <div class="feature weight3">
-      <h3 class="name">Open and accessible data format</h3>
-      <div class="details">Your data belongs to you. Do whatever you want with it. (It's just an sqlite file.)</div>
-    </div>
-
-    <div class="feature weight1">
-      <h3 class="name">Open source</h3>
-      <div class="details">(Desktop edition)</div>
-    </div>
-
-    <div class="feature weight3">
-      <h3 class="name">Scriptable and customisable</h3>
-      <div class="details">Extend or customise functionality yourself. (Ask us how to get started.)</div>
-    </div>
-
-    {% include hs-checkbox.html id="privacy-f" %}
-    <div class="feature weight2">
-      <h3 class="name">Privacy focused</h3>
-      {% include hs-toggle.html id="privacy-f" %}
-
-      <div class="details hs-target">We don't want to know anything about you or your accounts. No one else need know either.</div>
-    </div>
-
-    <div class="feature weight2">
-      <h3 class="name">Comply with multiple tax jurisdictions</h3>
-    </div>
-
-    <div class="feature weight1">
-      <h3 class="name">Double entry accounting</h3>
-    </div>
-
-    {% include hs-checkbox.html id="multi-currency-f" %}
-    <div class="feature weight1">
-      <h3 class="name">Multi currency</h3>
-      {% include hs-toggle.html id="multi-currency-f" %}
+    {% include hs-checkbox.html id="editions-f" %}
+    <div class="feature feature-editions">
+      <h3 class="name">Desktop or web edition</h3>
+      {% include hs-toggle.html id="editions-f" %}
 
       <div class="details hs-target">
         <p>
-          Gig'o'Books has true multi-currency support. You can enter transactions in any currency.
+          Gig'o'Books comes in two (or maybe in the future, three) editions.
         </p><p>
-          However, sales and purchases can only entered in a single currency (out of the currencies which are configured). For example, you can have an invoice that is in USD and another invoice which is in EUR, but you can't have an invoice which contains a USD amount and a EUR amount at the same time.
+          The Community / desktop edition (which is the original edition) runs on your Windows*/macOS/Linux desktop computer. It is free and open source.
         </p><p>
-          Reports can contain multiple currencies (where applicable), or can be configured to convert all amounts to a single currency (where applicable).
+          The Community edition is traditional 'old style' desktop software and saves data files to the local computer.
+        </p><p>
+          The Web edition is the Community edition re-targeted to run in a web browser. It can run on any device (Windows/macOS/Linux/iPhone/Android) that has a modern web browser. It is free.
+        </p><p>
+          The Web edition also saves data files to the local computer.
+        </p><p>
+          In the future, we might:
+        </p><ul>
+          <li>
+            Create a Premium edition for the desktop (or for smartphones) and charge for it, or
+          </li><li>
+            Put advertising on the Web edition.
+          </li>
+        </ul><p>
+          However, these are speculative and might not even happen. (We're only mentioning them because some people insist on knowing our monetisation plan even though we don't know what it is yet.)
+        </p><p class="fineprint">
+          *The Community edition hasn't been ported to Windows yet but this is expected to be a straightforward task.
+        </p>
+      </div>
+    </div>
+
+    {% include hs-checkbox.html id="free-f" %}
+    <div class="feature feature-free">
+      <h3 class="name">FREE!</h3>
+      {% include hs-toggle.html id="free-f" %}
+
+      <div class="details hs-target">
+        <p>
+          Both the Community desktop edition and the Web edition of Gig'o'Books are free. There are no subscription fees.
+        </p>
+      </div>
+    </div>
+
+    {% include hs-checkbox.html id="simple-f" %}
+    <div class="feature feature-simple">
+      <h3 class="name">Niche and simple</h3>
+      {% include hs-toggle.html id="simple-f" %}
+
+      <div class="details hs-target">
+        <p>
+          Gig'o'Books is tailored at a niche and contains only features which are needed. It does not have all the features of full accounting software but that's actually a good thing because it means Gig'o'Books is simple and not cluttered with unnecessary features.          
+        </p><p>
+          For example, there is no dedicated support for payroll or stock-keeping. (Albeit such data could still be entered via the generic double entry book-keeping feature.)
+        </p>
+      </div>
+    </div>
+
+    {% include hs-checkbox.html id="fast-f" %}
+    <div class="feature feature-fast">
+      <h3 class="name">Fast and offline</h3>
+      {% include hs-toggle.html id="fast-f" %}
+
+      <div class="details hs-target">
+        <p>
+          Gig'o'Books is fast.
+        </p><p>
+          Instead of running on a server 'somewhere in the cloud' like other SaaS accounting software, it runs fully (in a web browser) on your local computer or phone. Changes don't need to be uploaded to the cloud and then re-downloaded so they can appear instantaneously.          
+        </p><p>
+          This also means Gig'o'Books can run offline without an internet connection.          
+        </p>
+      </div>
+    </div>
+
+    {% include hs-checkbox.html id="nonsub-f" %}
+    <div class="feature feature-nonsub">
+      <h3 class="name">Non-subscription</h3>
+      {% include hs-toggle.html id="nonsub-f" %}
+
+      <div class="details hs-target">
+        <p>
+          There are no subscription fees with Gig'o'Books. 
+        </p><p>
+          Other SaaS accounting software charges you every month, even if you don't use it. Gig'o'Books does not.          
+        </p><p>
+          Some desktop accounting software force you to pay for new updates every few years, even if there are no useful changes. Gig'o'Books does not.          
+        </p>
+      </div>
+    </div>
+
+    {% include hs-checkbox.html id="owndata-f" %}
+    <div class="feature feature-owndata">
+      <h3 class="name">Own your data</h3>
+      {% include hs-toggle.html id="owndata-f" %}
+
+      <div class="details hs-target">
+        <p>
+          Don't be subject to vendor lock-in.
+        </p><p>
+          Gig'o'Books saves your data to your computer or phone. It does not store it 'somewhere in the cloud' that you have no control over.
+        </p><p>
+          Instead, own and manage your data yourself. Do whatever you want with it. If you want to save it to your own cloud folder and have it sync-ed across multiple devices, you can.          
+        </p>
+      </div>
+    </div>
+
+    {% include hs-checkbox.html id="opendata-f" %}
+    <div class="feature feature-opendata">
+      <h3 class="name">Open and accessible</h3>
+      {% include hs-toggle.html id="opendata-f" %}
+
+      <div class="details hs-target">
+        <p>
+          The data file uses an open and accessible format.
+        </p><p>
+          It's just an sqlite file. You can peer inside by opening it with any database program that supports sqlite (honourable mention: sqlitebrowser).
+        </p><p>
+          You can even modify the data this way (or write a script to do so) but please be very very careful if you do.
+        </p>
+      </div>
+    </div>
+
+    {% include hs-checkbox.html id="privacy-f" %}
+    <div class="feature feature-privacy">
+      <h3 class="name">Privacy focused</h3>
+      {% include hs-toggle.html id="privacy-f" %}
+
+      <div class="details hs-target">
+        <p>
+          We don't want to know anything about you or your accounts. The less we know, the better.
+        </p><p>
+          Since the data file is saved to your computer or phone, no one else has access to it except for you.
+        </p><p>
+          (If you save to a cloud folder via something like Dropbox or Google Drive, then the cloud folder provider might have access to it. We certainly don't.)          
+        </p>
+      </div>
+    </div>
+
+    {% include hs-checkbox.html id="invoices-f" %}
+    <div class="feature feature-invoices">
+      <h3 class="name">Tax compliant invoices</h3>
+      {% include hs-toggle.html id="invoices-f" %}
+
+      <div class="details hs-target">
+        <p>
+          Gig'o'Books creates tax compliant invoices in convenient PDF format. (Just make sure you fill in a tax id for all your customers.)
+        </p><p>
+          View a Sale transaction and click on the <code>PDF</code> link.
+        </p>
+      </div>
+    </div>
+
+    {% include hs-checkbox.html id="multi-tax-f" %}
+    <div class="feature feature-multi-tax">
+      <h3 class="name">Multiple tax authorities</h3>
+      {% include hs-toggle.html id="multi-tax-f" %}
+
+      <div class="details hs-target">
+        <p>
+          Satisfy tax reporting requirements for multiple tax authorities.
+        </p><p>
+          For example, if you sell eBooks to New Zealand and Canada and you consult to a client in Ireland, Gig'o'Books can produce tax reports (ie. GST101A, GST/HST, VAT3) for those three authorities, in their respective currencies, with the same set of books.
+        </p>
+      </div>
+    </div>
+
+    {% include hs-checkbox.html id="currency-f" %}
+    <div class="feature feature-multi-currency">
+      <h3 class="name">Multi-currency</h3>
+      {% include hs-toggle.html id="currency-f" %}
+
+      <div class="details hs-target">
+        <p>
+          Gig'o'Books has true multi-currency support. Transactions can be entered in any currency subject to the following limitation:
+        </p>
+        <ul><li>
+          Sales and purchases can only be entered in a single currency (out of the currencies which are configured).
+        </li></ul>
+        <p>
+          For example, there can be an invoice that is in USD and another invoice that is in EUR, but an invoice can't contain a USD amount and a EUR amount at the same time. (However, if you absolutely must need multi-currency within a single invoice, please contact us.)
+        </p><p>
+          Reports can show multiple currencies (where applicable), or can be configured to convert all amounts to a single currency (where applicable).
+        </p>
+      </div>
+    </div>
+
+    {% include hs-checkbox.html id="double-f" %}
+    <div class="feature feature-double">
+      <h3 class="name">Double entry</h3>
+      {% include hs-toggle.html id="double-f" %}
+
+      <div class="details hs-target">
+        <p>
+          Gig'o'Books uses double entry book-keeping underneath. Every transaction is stored as a series of debits and credits.
+        </p><p>
+          It is also possible to manually enter transactions in double entry form (known as 'raw' transactions).          
+        </p>
+      </div>
+    </div>
+
+    {% include hs-checkbox.html id="open-source-f" %}
+    <div class="feature feature-open-source">
+      <h3 class="name">Open source</h3>
+      {% include hs-toggle.html id="open-source-f" %}
+
+      <div class="details hs-target">
+        <p>
+          The Community desktop edition is free and open source under the GNU Affero General Public License v3.0.
+        </p>
+      </div>
+    </div>
+
+    {% include hs-checkbox.html id="support-f" %}
+    <div class="feature feature-support">
+      <h3 class="name">Awesome support</h3>
+      {% include hs-toggle.html id="support-f" %}
+
+      <div class="details hs-target">
+        <p>
+          With Gig'o'Books, the people who provide support are the people who wrote the software. We understand the software.
+        </p><p>
+          Always talk to someone knowledgeable ... and helpful too!
+        </p><p>
+          If you have any questions, comments, criticisms, feature requests, or anything, just drop us a line.          
         </p>
       </div>
     </div>

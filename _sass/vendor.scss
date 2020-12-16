@@ -49,12 +49,11 @@
 .footer-content { font-size: 15px; color: whitesmoke; }
 
 .center { text-align: center; }
+.fineprint { font-size: smaller; }
 
 .layout-home .page-content { padding: 0; }
 .layout-home .site-header { border-bottom-width: 0; }
-.pane { padding: 30px 0 35px;
-  .fineprint { font-size: smaller; }
-}
+.pane { padding: 30px 0 35px; }
 .pane-title { font-size: 32px; text-align: center; }
 
 .pane-splash {
@@ -130,19 +129,16 @@
     background: floralwhite;
     padding: 1em;
     margin: 0.5em;
-    flex: 1 1;
+    flex: 1 0 202px; 
   }
 
-  .weight0 { flex-basis: 40px; }
-  .weight1 { flex-basis: 100px; }
-  .weight2 { flex-basis: 180px; }
-  .weight3 { flex-basis: 300px; }
-  .weight4 { flex-basis: 360px; }
+  @media screen and (min-width: 770px) {
+    .feature-editions { flex: 2 0; flex-basis: 454px; }
+  }
+  .name { font-size: 1em; font-weight: bold; margin-bottom: 0; display: inline-block; margin-right: -0.25em; }
 
-  .name { font-size: 1em; font-weight: bold; margin-bottom: 0; display: inline-block; }
-
-  .hs-shower, .hs-hider { vertical-align: top; color: $brand-color; }
-  input.hs-state:checked + .feature { flex-basis: auto; }
+  .hs-shower, .hs-hider { vertical-align: middle; color: $brand-color; }
+  input.hs-state:checked + .feature { flex: 1 1 auto; }
 }
 
 .pane-faq {
