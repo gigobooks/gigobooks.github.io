@@ -1,5 +1,7 @@
 @import "hideshow";
 
+.wrapper { min-width: 320px; }
+
 .site-header {
   border-top: none;
   border-bottom: 6px solid cornflowerblue;
@@ -22,6 +24,7 @@
     border-color: green;
     border-color: forestgreen darkgreen darkgreen forestgreen;
     border-radius: 20px;
+    box-shadow: 0px 0px 2px black;
     padding: 4px 16px 2px;
     margin: 0;
     font-weight: bold;
@@ -62,13 +65,13 @@
   padding-bottom: 0;
 
   .wrapper { position: relative; }
+  .pane-title { max-width: 16em; text-align: left; }
   .blurb { max-width: 32em; margin-bottom: 1em; }
 
   .screenshot { max-width: 160px; }
   .image { position: absolute; right: 20px; bottom: 0; width: 190px; }
-  .green-button { padding-top: 20px; }
+  .green-button { padding-top: 20px; margin-bottom: 1em; }
   .cta { text-align: center; width: 490px; }
-  .cta p { font-size: smaller; margin-top: 1em; }
 
   @media screen and (max-width: 750px) {
     .screenshot { max-width: 160px; }
@@ -91,6 +94,13 @@
   }
 }
 
+.pane-intro {
+  text-align: justify;
+  .green-button { margin-bottom: 1em; }
+  padding-bottom: 0;
+}
+
+/*
 .pane-dodonts {
   .fineprint { text-align: center; }
 
@@ -115,6 +125,7 @@
 
   .post-do-dont { clear: both; text-align: center; }
 }
+*/
 
 .pane-demo { background: navajowhite; }
 
@@ -142,10 +153,12 @@
 }
 
 .pane-faq {
-  background: navajowhite;
-
   .faq { padding-bottom: 1em; }
   .hs-shower, .hs-hider { position: absolute; color: $brand-color; }
   .question { display: inline-block; font-weight: bold; padding-left: 24px; }
   .answer { padding-left: 24px; }
+}
+
+.pane-remainder {
+  background: khaki;
 }
