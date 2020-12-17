@@ -1,5 +1,7 @@
 @import "hideshow";
 
+body { background: snow; }
+
 .wrapper { min-width: 320px; }
 
 .site-header {
@@ -153,7 +155,15 @@
 }
 
 .pane-faq {
-  .faq { padding-bottom: 1em; }
+  .faq {
+    background: white;
+    padding: 0.5em 0.5em 0.5em 0.25em;
+    border: 1px solid slategrey;
+    border-radius: 10px;
+    margin-bottom: 1em;
+  }
+  .faq:last-of-type { margin-bottom: 0; }
+
   .hs-shower, .hs-hider { position: absolute; color: $brand-color; }
   .question { display: inline-block; font-weight: bold; padding-left: 24px; }
   .answer { padding-left: 24px; }
