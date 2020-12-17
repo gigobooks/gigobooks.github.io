@@ -166,7 +166,7 @@ body { background: snow; }
 
   .hs-shower, .hs-hider { position: absolute; color: $brand-color; }
   .question { display: inline-block; font-weight: bold; padding-left: 24px; }
-  .answer { padding-left: 24px; }
+  .answer { margin-top: 1em; padding-left: 24px; }
 }
 
 .pane-remainder {
