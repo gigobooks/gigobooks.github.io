@@ -1,7 +1,5 @@
 @import "hideshow";
 
-body { background: snow; }
-
 .wrapper { min-width: 320px; }
 
 .site-header {
@@ -9,7 +7,14 @@ body { background: snow; }
   border-bottom: 6px solid cornflowerblue;
   min-height: auto;
   min-width: 350px;
+  position: sticky;
+  top: 0;
+  background: white;
+  z-index: 10;
+  box-shadow: 0 2px 20px #333;
 }
+
+a.anchor { display: block; position: relative; top: -54px; visibility: hidden; }
 
 .site-title {
   letter-spacing: 0;
@@ -38,6 +43,7 @@ body { background: snow; }
   a:hover .secondary { display: inline; font-weight: normal; }
 }
 .launch-webapp { float: right; margin: 10px 10px 0; a { width: 80px; padding-left: 6px; padding-right: 6px; } }
+@media screen and (max-width: 630px) { .launch-webapp { margin: 12px 50px 0 0;  } }
 
 .site-footer {
   border-top: none;
@@ -156,7 +162,7 @@ body { background: snow; }
 
 .pane-faq {
   .faq {
-    background: white;
+    background: snow;
     padding: 0.5em 0.5em 0.5em 0.25em;
     border: 1px solid slategrey;
     border-radius: 10px;
