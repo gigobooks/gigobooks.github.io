@@ -23,27 +23,22 @@ a.anchor { display: block; position: relative; top: -54px; visibility: hidden; }
 }
 
 .green-button {
-  a {
-    display: inline-block;
-    background: green;
-    background: linear-gradient(to right, green, forestgreen, green);
-    border: 1px solid;
-    border-color: green;
-    border-color: forestgreen darkgreen darkgreen forestgreen;
-    border-radius: 20px;
-    box-shadow: 0px 0px 2px black;
-    padding: 4px 16px 2px;
-    margin: 0;
-    font-weight: bold;
-    text-align: center;
-  }
-  a, a:visited { color: white; }
-  a:hover { text-decoration: none; background: forestgreen; }
-  a:hover .primary, a .secondary { display: none; }
-  a:hover .secondary { display: inline; font-weight: normal; }
+  display: inline-block;
+  background: green;
+  background: linear-gradient(to bottom, green, rgb(42, 151, 42), green);
+  border: 1px solid;
+  border-color: green;
+  border-radius: 20px;
+  box-shadow: 0px 0px 2px black;
+  padding: 4px 16px;
+  margin: 0;
+  text-align: center;
+
+  &, &:visited { color: white; }
+  &:hover { text-decoration: none; background: rgb(42, 151, 42); color: lemonchiffon; }
 }
 .launch-webapp { float: right; margin: 10px 10px 0; a { width: 80px; padding-left: 6px; padding-right: 6px; } }
-@media screen and (max-width: 630px) { .launch-webapp { margin: 12px 50px 0 0;  } }
+@media screen and (max-width: 650px) { .launch-webapp { margin: 12px 50px 0 0;  } }
 
 .site-footer {
   border-top: none;
@@ -78,15 +73,15 @@ a.anchor { display: block; position: relative; top: -54px; visibility: hidden; }
 
   .screenshot { max-width: 160px; }
   .image { position: absolute; right: 20px; bottom: 0; width: 190px; }
-  .green-button { padding-top: 20px; margin-bottom: 1em; }
-  .cta { text-align: center; width: 490px; }
+  .green-button { margin-bottom: 1em; }
+  .cta { text-align: center; width: 490px; margin-top: 20px; }
 
   @media screen and (max-width: 750px) {
     .screenshot { max-width: 160px; }
     .image { width: 150px; }
   }
 
-  @media screen and (max-width: 680px) {
+  @media screen and (max-width: 690px) {
     .screenshot { max-width: 135px; }
     .image { width: 150px; }
     .cta { width: 410px; }
@@ -96,13 +91,12 @@ a.anchor { display: block; position: relative; top: -54px; visibility: hidden; }
     .screenshot { max-width: 32%; }
     .image { width: auto; height: 200px; }
     .pad { min-height: 195px; padding-right: 120px; }
-    .cta { margin: 20px 0 0 20px; width: auto; }
-    .green-button { padding: 30px 0 1em; }
-    .cta p { display: inline-block; width: 13em; }
+    .cta { margin: 20px 0 0 20px; width: auto; padding-top: 60px; }
   }
 }
 
 .pane-intro {
+  box-shadow: 0 -2px 20px #333;
   text-align: justify;
   .green-button { margin-bottom: 1em; }
   padding-bottom: 0;
