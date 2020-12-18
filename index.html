@@ -458,6 +458,78 @@ title: Gig'o'Books
     </div>
   </div>
 
+  <!--
+  <div class="faq">
+    {% include hs-checkbox.html id="-q" %}
+    {% include hs-toggle.html id="-q" %}
+    <span class="question">
+      <label for="-q" class="hs-label">
+        
+      </label>
+    </span>
+
+    <div class="answer hs-target">
+      <p>
+      </p><p>
+      </p><p>
+      </p>
+    </div>
+  </div>
+
+  -->
+
+  <div class="faq">
+    {% include hs-checkbox.html id="reconciliation-q" %}
+    {% include hs-toggle.html id="reconciliation-q" %}
+    <span class="question">
+      <label for="reconciliation-q" class="hs-label">
+        Does Gig'o'Books support bank reconciliation?
+      </label>
+    </span>
+
+    <div class="answer hs-target">
+      <p>
+        Unfortunately, not yet ... although it is something we should think about doing. If you need bank reconcilation functionality, please contact us.
+      </p>
+    </div>
+  </div>
+
+  <div class="faq">
+    {% include hs-checkbox.html id="integration-q" %}
+    {% include hs-toggle.html id="integration-q" %}
+    <span class="question">
+      <label for="integration-q" class="hs-label">
+        Does Gig'o'Books support integrations with third party services (ie. PayPal/Stripe/other)?
+      </label>
+    </span>
+
+    <div class="answer hs-target">
+      <p>
+        Unfortunately, not yet ... although it is something we should think about doing. If you need third party integration, please contact us.
+      </p>
+    </div>
+  </div>
+
+  <div class="faq">
+    {% include hs-checkbox.html id="outgrow-q" %}
+    {% include hs-toggle.html id="outgrow-q" %}
+    <span class="question">
+      <label for="outgrow-q" class="hs-label">
+        What happens when I outgrow Gig'o'Books?
+      </label>
+    </span>
+
+    <div class="answer hs-target">
+      <p>
+        When your gig or side income outgrows Gig'o'Books, you can export your data and pass it to your accountant or new accounting software provider. They can import it into your new system.
+      </p><p>
+        For example, you can open the data file with a sqlite database viewer and export in CSV format. (If you need a more customised or fancy export, please contact us.)
+      </p><p>
+        Since Gig'o'Books uses double entry book-keeping, there is no loss of data nor detail.
+      </p>
+    </div>
+  </div>
+
   <div class="faq">
     {% include hs-checkbox.html id="unsuitable-q" %}
     {% include hs-toggle.html id="unsuitable-q" %}
@@ -474,7 +546,7 @@ title: Gig'o'Books
       <ul><li>
         You have employees or have to do payroll. &mdash; There's no support for either.
       </li><li>
-        You have to keep track of inventory or stock. &mdash; There's no inventory or stock tracking feature. Although ... if you only have a small amount of stock to track, it might be do-able (albeit clumsy).
+        You have to keep track of inventory or stock. &mdash; There's no inventory or stock tracking feature. If you still want to use Gig'o'Books, you can, but you'd need to find another way to keep track of inventory or stock.
       </li><li>
         You have complicated financial affairs. &mdash; Unless you want to enter transactions as 'raw' double entry transactions.
       </li><li>
