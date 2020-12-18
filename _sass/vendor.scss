@@ -140,13 +140,13 @@ a.anchor { display: block; position: relative; top: -54px; visibility: hidden; }
     border: 1px solid slategrey;
     border-radius: 10px;
     background: floralwhite;
-    padding: 1em;
+    padding: 1em 0 1em 1em;
     margin: 0.5em;
     flex: 1 0 202px; 
   }
 
   @media screen and (min-width: 770px) {
-    .feature-editions { flex: 2 0; flex-basis: 454px; }
+    .feature-editions { flex: 2 0; flex-basis: 438px; }
   }
   .name { font-size: 1em; font-weight: bold; margin-bottom: 0; display: inline-block; margin-right: -0.25em; }
 
@@ -165,7 +165,7 @@ a.anchor { display: block; position: relative; top: -54px; visibility: hidden; }
   .faq:last-of-type { margin-bottom: 0; }
 
   .hs-shower, .hs-hider { position: absolute; color: $brand-color; }
-  .question { display: inline-block; font-weight: bold; padding-left: 24px; }
+  .question { display: block; font-weight: bold; padding-left: 24px; }
   .answer { margin-top: 1em; padding-left: 24px; }
 }
 

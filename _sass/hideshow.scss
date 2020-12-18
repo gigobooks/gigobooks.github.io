@@ -3,7 +3,7 @@
 // invisible checkbox which retains state
 // input.hs-state { display: none; }
 
-.hs-shower, .hs-hider { cursor: pointer; }
+.hs-label { cursor: pointer; }
 
 input.hs-state:checked ~ * > .hs-shower,
 input.hs-state:checked + * > * > .hs-shower,
