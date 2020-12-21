@@ -153,4 +153,6 @@ a.anchor { display: block; position: relative; top: -54px; visibility: hidden; }
 .pane-remainder {
   background: beige;
   background: linear-gradient(to bottom, beige, #ffffdd);
+
+  .text { display: inline-block; max-width: 31em; }
 }
