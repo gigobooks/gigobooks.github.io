@@ -417,6 +417,44 @@ title: Gig'o'Books
   <h2 class="pane-title">FAQs</h2>
 
   <div class="faq">
+    {% include hs-checkbox.html id="invoice-only-q" %}
+    {% include hs-toggle.html id="invoice-only-q" %}
+    <span class="question">
+      <label for="invoice-only-q" class="hs-label">
+        I only want to use Gig'o'Books for invoicing. Can I?
+      </label>
+    </span>
+
+    <div class="answer hs-target">
+      <p>
+        Yes, you can!
+      </p><p>
+        If you want to use Gig'o'Books for invoicing only, then enter only your sales data. Don't enter any purchases data.
+      </p><p>
+        However, this means you won't be able to use any of the reports. The reports will be incorrect since they are missing purchases data.
+      </p>
+    </div>
+  </div>
+
+  <div class="faq">
+    {% include hs-checkbox.html id="tax-q" %}
+    {% include hs-toggle.html id="tax-q" %}
+    <span class="question">
+      <label for="tax-q" class="hs-label">
+        What tax authorities do you support or comply with?
+      </label>
+    </span>
+
+    <div class="answer hs-target">
+      <p>
+        Currently, we support Australia, Canada, Ireland and New Zealand. Support for the UK will be coming soon once brexit happens.
+      </p><p>
+        We are interested in adding support for more tax authorities (particularly EU countries and US state sales tax) but we need users to help us test and verify. If you are able to assist, please contact us. Thanks!        
+      </p>
+    </div>
+  </div>
+
+  <div class="faq">
     {% include hs-checkbox.html id="data-trust-q" %}
     {% include hs-toggle.html id="data-trust-q" %}
     <span class="question">
@@ -479,6 +517,84 @@ title: Gig'o'Books
   -->
 
   <div class="faq">
+    {% include hs-checkbox.html id="editions-q" %}
+    {% include hs-toggle.html id="editions-q" %}
+    <span class="question">
+      <label for="editions-q" class="hs-label">
+        What is the difference between the Community edition and the Web edition?
+      </label>
+    </span>
+
+    <div class="answer hs-target">
+      <p>
+        The Community desktop edition of Gig'o'Books runs on a computer (macOS/Linux, Windows soon) like a desktop software program.
+      </p><p>
+        The Web edition is a fork/variant of the Community edition that has been re-targeted to run inside a web browser. The source code changes are due to the vagaries of running in a web environment.
+      </p><p>
+        Functionally, there are no differences between the two editions. The features are exactly the same. Whatever you can do with one edition, you can also do with the other.
+      </p>
+    </div>
+  </div>
+
+  <div class="faq">
+    {% include hs-checkbox.html id="longevity-q" %}
+    {% include hs-toggle.html id="longevity-q" %}
+    <span class="question">
+      <label for="longevity-q" class="hs-label">
+        How do I know you'll still be around in 10 or 20 years time?
+      </label>
+    </span>
+
+    <div class="answer hs-target">
+      <p>
+        Nobody can predict the future. Large tech companies can falter. Long running tech products can get acquired and change their focus or even just be shut down.
+      </p><p>
+        Unfortunately, we can't guarantee we'll be around in 10 years time. We certainly intend to be, but we can't guarantee it. Nobody can guarantee anything.
+      </p><p>
+        However, here are some mitigating things to consider:
+      </p><p>
+        Gig'o'Books has extremely low, almost non-existent, running costs. The source code, website, and app are hosted by Microsoft on a free plan. Gig'o'Books is not going to have a problem with cash burn.
+      </p><p>
+        Gig'o'Books is focused on a niche. Once the product is feature complete, there is no pressure to keep 'innovating' if 'innovating' means 'continually changing things just so there is work to do'. Gig'o'Books is not going to change it's focus.
+      </p><p>
+        We use Gig'o'Books ourselves for our own personal projects. So we have a vested interest in it staying around.
+      </p><p>
+        Let's assume the worst case: Gig'o'Books is acquired for a billion dollars and forcibly shut down.
+      </p><p>
+        Since Gig'o'Books is open data, you'll still have your data and you can migrate to something else if you wish.
+      </p><p>
+        Since Gig'o'Books is open source, it can still be supported by the community and continue to keep working indefinitely.
+      </p><p>
+        Overall, Gig'o'Books is just as likely to still be around in 10 or 20 years time as any other app (if not more so).
+      </p>
+    </div>
+  </div>
+
+  <div class="faq">
+    {% include hs-checkbox.html id="monetise-q" %}
+    {% include hs-toggle.html id="monetise-q" %}
+    <span class="question">
+      <label for="monetise-q" class="hs-label">
+        How can Gig'o'Books be free? What's your business model? How do you monetise?
+      </label>
+    </span>
+
+    <div class="answer hs-target">
+      <p>
+        Gig'o'Books can be free because the running costs are almost non-existent. The source code, website, and app are hosted by Microsoft on a free plan. There are no expensive servers to maintain.
+      </p><p>
+        We don't really have a business model yet. We have some ideas, but they are just that: ideas. Ideas may or may not actually happen.
+      </p><p>
+        One idea is to sell a premium edition of Gig'o'Books and charge for it. But we don't really know what will be in the premium edition that is not in a 'non-premium' edition (Told you we don't have a business model yet).
+      </p><p>
+        In any case, if this happens, it will be far in the future. Furthermore, we won't remove any features in the existing editions in order to upsell.
+      </p><p>
+        Another idea is to place (non-targeted) advertising on the Web edition. This is just an idea, nothing more.
+      </p>
+    </div>
+  </div>
+
+  <div class="faq">
     {% include hs-checkbox.html id="reconciliation-q" %}
     {% include hs-toggle.html id="reconciliation-q" %}
     <span class="question">
@@ -506,6 +622,22 @@ title: Gig'o'Books
     <div class="answer hs-target">
       <p>
         Unfortunately, not yet ... although it is something we should think about doing. If you need third party integration, please contact us.
+      </p>
+    </div>
+  </div>
+
+  <div class="faq">
+    {% include hs-checkbox.html id="unsupported-q" %}
+    {% include hs-toggle.html id="unsupported-q" %}
+    <span class="question">
+      <label for="unsupported-q" class="hs-label">
+        Does Gig'o'Books support job quoting, time tracking or invoice reminders?
+      </label>
+    </span>
+
+    <div class="answer hs-target">
+      <p>
+        Unfortunately, not yet ... although it is something we have thought about and would consider doing. If you need these features, please contact us and let's have a talk.
       </p>
     </div>
   </div>
