@@ -19,7 +19,7 @@
         </label>
 
         <div class="trigger">
-          <a class="page-link" href="/#home">Home</a><a class="page-link" href="/#demo">Demo</a><a class="page-link" href="/#pricing">Pricing</a><a class="page-link" href="/#features">Features</a><a class="page-link" href="/#faqs">FAQs</a>
+          <a class="page-link" href="/#home">Home</a><a class="page-link" href="/#pricing">Pricing</a><a class="page-link" href="/#demo">Demo</a><a class="page-link" href="/#features">Features</a><a class="page-link" href="/#faqs">FAQs</a>
           {%- for path in page_paths -%}
             {%- assign my_page = site.pages | where: "path", path | first -%}
             {%- if my_page.title -%}
