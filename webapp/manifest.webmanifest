@@ -1,0 +1,13 @@
+{
+    "name": "Gig'o'Books",
+    "short_name": "Gig'o'Books",
+    "description": "Accounting, tax reporting, and invoicing for gigs and side income",
+    "icons": [
+        {"src": "logo-192.png", "type": "image/png", "sizes": "192x192"},
+        {"src": "logo-512.png", "type": "image/png", "sizes": "512x512"}
+    ],
+    "start_url": "./",
+    "display": "minimal-ui",
+    "background_color": "#f5f5f5",
+    "theme_color": "#f5f5f5"
+}
