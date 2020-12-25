@@ -4,7 +4,7 @@
 
 const CACHE_PREFIX = 'main.'
 //
-const CACHE_VERSION = "20201222" + '.' + "7432aae"  // + '-1'
+const CACHE_VERSION = "20201225" + '.' + "f49b7a0"  // + '-1'
 const CACHE_NAME = CACHE_PREFIX + CACHE_VERSION
 
 const filesToCache = [
@@ -13,8 +13,13 @@ const filesToCache = [
   // 'index.html',
   'Loading_indicator.gif',
   'logo-192.png',
+  'logo-192-maskable.png',
+  'logo-192-opaque.png',
   'logo-512.png',
+  'logo-512-maskable.png',
   'main.js',
+  'dynamic.js',
+  'vendors~dynamic.js',
   // 'main.js.map',
   'manifest.webmanifest',
   'rc-menu/index.css',
