@@ -4,7 +4,7 @@
 
 const CACHE_PREFIX = 'main.'
 //
-const CACHE_VERSION = "20201225" + '.' + "f49b7a0"  // + '-1'
+const CACHE_VERSION = "20201228" + '.' + "29836ff"  // + '-1'
 const CACHE_NAME = CACHE_PREFIX + CACHE_VERSION
 
 const filesToCache = [
